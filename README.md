@@ -160,4 +160,79 @@ The results showed that the model was able to learn patterns from patient health
 
 # 5 mental health support chatbot
 
+# What the task was trying to achieve
+
+The goal of this task was to build a **Mental Health Support Chatbot** using Artificial Intelligence. The chatbot was designed to give kind, supportive, and empathetic replies to users who are feeling stressed, anxious, or emotionally low. The project also helped in understanding how conversational AI models are trained and fine-tuned using real human dialogue data.
+
+# Which dataset you used
+
+For this project, the **EmpatheticDialogues** dataset by Facebook AI was used. This dataset contains real emotional conversations between people. It helped the chatbot learn how to respond in a soft, caring, and supportive manner during conversations related to mental health and emotions.
+
+# Which models you applied
+
+In this project, the **DistilGPT2** language model from Hugging Face Transformers was used because it is lightweight and suitable for beginners.
+The following technologies and libraries were also used:
+
+  Python
+  Hugging Face Transformers
+  PyTorch
+  Datasets Library
+  Trainer API
+
+The model was fine-tuned using the Hugging Face `Trainer` API on a small portion of the EmpatheticDialogues dataset.
+
+# The main results and what you found
+
+After training, the chatbot was able to generate simple emotional support responses for user messages. The training loss reduced from around **1.17** to nearly **0.47**, which showed that the model learned conversation patterns successfully.
+
+The chatbot could answer prompts like:
+
+“I feel stressed and anxious.”
+“I feel sad today.”
+
+The project demonstrated how AI chatbots can be trained to understand emotional conversations and provide supportive replies. It also showed the importance of prompt design, dataset quality, and safe chatbot behavior in mental health applications.
+
+# House prise prediction:
+
+# What the task was trying to achieve
+
+The main goal of this task was to build a **House Price Prediction System** using Machine Learning. The project aimed to predict house prices based on different house features such as bedrooms, bathrooms, living area, floors, condition, and location-related information. This task helped in understanding how regression models work for real-world price prediction problems.
+
+# Which dataset you used
+
+In this project, the **kc_house_data.csv** dataset was used. This dataset contains house sales data from King County, USA. It includes important features such as:
+
+  Number of bedrooms
+  Number of bathrooms
+  Square feet living area
+  Floors
+  Waterfront
+  Condition and grade
+  House price (target column)
+
+The price column was used as the output/target variable, while the remaining columns were used as input features.
+
+# Which models you applied
+
+Two regression models were applied in this project:
+
+   Linear Regression
+   Gradient Boosting Regressor
+The project also used:
+
+  Pandas for data handling
+  Matplotlib and Seaborn for visualization
+  Scikit-learn for machine learning and evaluation
+
+# The main results and what you found
+
+The dataset was cleaned by removing unnecessary columns like `id` and `date`. After splitting the dataset into training and testing sets, the models were trained successfully.
+
+The performance of the Linear Regression model was evaluated using:
+**MAE (Mean Absolute Error)**
+**RMSE (Root Mean Squared Error)**
+
+A scatter plot was also created to compare actual house prices with predicted prices.
+
+The project showed that machine learning models can effectively predict house prices using property-related features. It also demonstrated how advanced models like Gradient Boosting can provide better prediction accuracy compared to simple linear models.
 
